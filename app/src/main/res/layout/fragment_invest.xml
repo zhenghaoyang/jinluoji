@@ -4,12 +4,180 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include layout="@layout/common_title"></include>
-
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager_invest"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="加点息"
+                    android:textColor="#111111"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/tv_search"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg"
+
+                    android:gravity="center"
+                    android:text="搜索"
+                    android:textColor="#8A8A8A" />
+
+                <ImageView
+                    android:id="@+id/iv_serach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/search" />
+
+
+            </LinearLayout>
+
+            <!--Banner-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <!--三个图片按钮-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <!--<ImageView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:src="@drawable/huodong" />-->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/huodong"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="每日计息"
+                    android:textColor="@color/home_back_unselected" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/huodong"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="每日计息"
+                    android:textColor="@color/home_back_unselected" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/huodong"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="每日计息"
+                    android:textColor="@color/home_back_unselected" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="昨日总交易" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1000"
+                        android:textColor="#CC0033" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="平均年化" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="100%"
+                        android:textColor="#CC0033" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/me"
+                android:drawableRight="@drawable/invest"
+                android:gravity="center"
+                android:text="中彩票了"
+                android:textColor="@color/product_detail_common"
+                android:textSize="16sp" />
+
+            <com.viewpagerindicator.TabPageIndicator
+                android:id="@+id/tabpage_invest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.viewpagerindicator.TabPageIndicator>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_invest"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#6666FF"></android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

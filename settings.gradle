@@ -1,1 +1,1 @@
-include ':app', ':WidgetInAppBar', ':dymicSearchview'
+include ':app', ':WidgetInAppBar', ':dymicSearchview', ':ViewPagerIndicator'

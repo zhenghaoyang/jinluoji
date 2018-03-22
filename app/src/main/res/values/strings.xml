@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">jiadianxi</string>
+
+    <string-array name="invest_tab">
+        <item>全部</item>
+        <item>超级加息</item>
+        <item>年化专区</item>
+        <item>VIP专区</item>
+
+    </string-array>
 </resources>

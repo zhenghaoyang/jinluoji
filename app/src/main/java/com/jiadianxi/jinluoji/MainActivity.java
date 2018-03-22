@@ -1,11 +1,9 @@
 package com.jiadianxi.jinluoji;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
-import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -22,12 +20,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity {
-    @Bind(R.id.iv_title_back)
-    ImageView ivTitleBack;
-    @Bind(R.id.tv_title)
-    TextView tvTitle;
-    @Bind(R.id.iv_title_setting)
-    ImageView ivTitleSetting;
+
     @Bind(R.id.fl_main)
     FrameLayout flMain;
     @Bind(R.id.iv_main_invest)
@@ -67,7 +60,7 @@ public class MainActivity extends BaseActivity {
 
     @OnClick({R.id.ll_main_invest, R.id.ll_main_me, R.id.ll_main_more})
     public void showTab(View view) {
-        Toast.makeText(MainActivity.this, "选择了具体的Tab", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(MainActivity.this, "选择了具体的Tab", Toast.LENGTH_SHORT).show();
         switch (view.getId()) {
             case R.id.ll_main_invest://首页
                 setSelect(0);
@@ -164,6 +157,14 @@ public class MainActivity extends BaseActivity {
     }
 
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // TODO: add setContentView(...) invocation
+        ButterKnife.bind(this);
+        //默认选择第一个页面
+        setSelect(0);
+    }
 }
 
 //        initToolbar();

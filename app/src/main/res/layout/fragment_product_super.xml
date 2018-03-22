@@ -4,16 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-    <FrameLayout
-        android:id="@+id/fl_main"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-    </FrameLayout>
-
-    <include layout="@layout/main_bottom"></include>
-
+        android:layout_height="wrap_content"
+        android:text="超级"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp" />
 
 </LinearLayout>
+

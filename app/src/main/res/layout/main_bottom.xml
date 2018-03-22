@@ -7,40 +7,35 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#e1dbdb"
-        ></View>
+        android:background="#e1dbdb"></View>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:orientation="horizontal"
-        >
+        android:layout_height="50dp"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:id="@+id/ll_main_invest"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
             android:gravity="center"
-            >
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/iv_main_invest"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/invest1"
-                android:layout_marginTop="2dp"
-                />
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/invest1" />
 
             <TextView
                 android:id="@+id/tv_main_invest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="投资"
-                android:layout_marginTop="3dp"
-                android:textSize="16sp"
                 android:textColor="#111111"
-                />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -49,26 +44,23 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
             android:gravity="center"
-            >
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/iv_main_me"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/me1"
-                android:layout_marginTop="2dp"
-                />
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/me1" />
 
             <TextView
                 android:id="@+id/tv_main_me"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="我的账户"
-                android:layout_marginTop="3dp"
-                android:textSize="16sp"
                 android:textColor="#111111"
-                />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -77,26 +69,23 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
             android:gravity="center"
-            >
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/iv_main_more"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/more1"
-                android:layout_marginTop="2dp"
-                />
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="2dp"
+                android:src="@drawable/more1" />
 
             <TextView
                 android:id="@+id/tv_main_more"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="更多"
-                android:layout_marginTop="3dp"
-                android:textSize="16sp"
                 android:textColor="#111111"
-                />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
